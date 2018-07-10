@@ -1,0 +1,30 @@
+%h1 Listing games
+
+.gamesBanner
+  = render "banner"
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Brief description
+      %th Price
+      %th Thumbnail url
+      %th
+      %th
+      %th
+
+  %tbody
+    - @games.each do |game|
+      %tr
+        %td= game.title
+        %td= game.brief_description
+        %td= game.price
+        %td= game.thumbnail_url
+        %td= link_to 'Show', game
+        %td= link_to 'Edit', edit_game_path(game)
+        %td= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Game', new_game_path

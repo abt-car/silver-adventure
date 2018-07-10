@@ -1,0 +1,22 @@
+#gamesBanner.carousel.slide{:data-ride =>"carousel"}
+
+    %ul.carousel-indicators
+        %li.active{:data-target => "#gamesBanner", :data-slide-to => "0"}
+        %li{:data-target => "#gamesBanner", :data-slide-to => "1"}
+        %li{:data-target => "#gamesBanner", :data-slide-to => "2"}
+        %li{:data-target => "#gamesBanner", :data-slide-to => "3"}
+
+    .carousel-inner
+        .carousel-item.active
+            %img{:src => "https://data3.origin.com/content/dam/originx/web/app/programs/Store/FIFA_18_World_Cup_store_hero_en_ww_v1.jpg"}
+        .carousel-tem
+            %img{:src => "https://data4.origin.com/content/dam/originx/web/app/programs/Store/mlu-june/SWBF2_HanSolo_store_hero_en_ww_v1.jpg"}
+        .carousel-tem
+            %img{:src => "https://data2.origin.com/content/dam/originx/web/app/programs/Store/mlu-june/Madden19_Cowboys49ers_screenshot_store_hero_en_ww_v2.jpg"}
+        .carousel-tem
+            %img{:src => "https://data1.origin.com/content/dam/originx/web/app/programs/Store/mlu-june/ANTHEM_LoD_store_hero_en_ww_v1.jpg"}
+
+    %a.carousel-control-prev{:href => "#gamesBanner", :data-slide => "prev"}
+        %span.carousel-control-prev-icon
+    %a.carousel-control-next{:href => "#gamesBanner", :data-slide => "next"}
+        %span.carousel-control-next-icon
