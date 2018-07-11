@@ -1,23 +1,23 @@
 <nav id="sidebar">
     <div class="sidebar-header">
-        <h3> My Sidebar </h3>
+        <img id="originLogo" src="https://logodownload.org/wp-content/uploads/2017/12/origin-logo.png" alt="Logo" height="32px" width="100px">
+        <form class="form-group" action="index.html" method="post">
+            <input id="gameSearchInput" class="form-control" type="text" name="game-search" value="Search games and more">
+        </form>
     </div>
 
     <ul class="list-unstyled components">
-        <p>Dummy Heading</p>
-        <li class="active">
-            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-            <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                    <a href="#">Home 1</a>
-                </li>
-                <li>
-                    <a href="#">Home 2</a>
-                </li>
-                <li>
-                    <a href="#">Home 3</a>
-                </li>
-            </ul>
+        <li>
+            <div class="dropdown dropright">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Dropright button 
+                </button>
+                <div class="dropdown-menu" id="homeSubmenu">
+                    <a class="dropdown-item" href="#">Valut Games</a>
+                    <a class="dropdown-item" href="#">Play First Trials</a>
+                    <a class="dropdown-item" href="#">Origin Access FAQ</a>
+                </div>
+            </div>
         </li>
         <li>
             <a href="#">About</a>

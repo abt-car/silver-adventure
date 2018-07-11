@@ -14,3 +14,12 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+    $("#gameSearchInput").focus(function(){
+        $(this).css("border", "solid 2px orange");
+        $(this).css("outline-style", "solid");
+        $(this).css("outline-color", "orange");
+        $(this).css("outline-width", "medium");
+    })
+});
